@@ -2,19 +2,35 @@
 <html>
 <head>
     <title></title>
-	<meta charset="utf-8" />
+    <meta charset="utf-8" />
 </head>
 <body>
+    <!--Rita ett flödesschema som skriver ut kvadraten på ett tal som läses in.-->
+    <div>
+        <span>Enter number to get the square:</span>
+        <input id="input_numberToSquare" />
+        <button id="button_calculateSquareOfNumber">Calculate square of your number</button>
+        <br />
+        <span>Result:</span><span id="squaredNumber"></span>
+    </div>
+    <hr />
+
+    <!--En försäljare har delvis provision. Han får 15000kr per månad i grundlön samt 9% av försäljningssumman.
+    Rita ett flödesschema som beräknar lönesumman under en period. Försäljningssumman ska läsas in.-->
+    <div>
+        <span>Sales amount:</span>
+        <input id="input_salesAmount" />
+        <button id="button_calculateWage">Calculate wage</button>
+        <span id="totalWage"></span>
+    </div>
+    <hr/>
+    <!--Rita ett flödesschema som läser in antalet timmar, beräknar och skriver ut hur mycket detta blir omvandlat till minuter respektive sekunder.-->
 <div>
-    <span>Enter number to get the square of two:</span>
-    <input id="squareOfTwo"/>
-    <button id="CalculateSquareOfTwo">Calculate square of two</button>
-    <br/>
-    <span>Result:</span><span id="squareOfTwoResult"></span>
-</div>
-<hr/>
-<div id="sale">
-    <span>Försäljningssumma:</span><input id="salesSum"/><button id="calculateSum">Calculate Sum</button><span id="sales_sum"></span>
+    <span>Enter hour(s):</span>
+    <input id="input_Hours"/>
+    <button id="button_calculateHoursIntoMinutesAndSeconds">Calculate hours into minutes and seconds</button>
+    <span>Result:</span>
+    <span id="hoursToMinutesAndSecondsResult"></span>
 </div>
 </body>
 </html>
