@@ -1,6 +1,7 @@
 ﻿document.getElementById("button_IfFirstNumberGreatest_ThenShow").addEventListener('click', checkIfFirstNumberIsTheGreatest, true);
 document.getElementById("button_IfFirstNumberIsTwiceAsSecond_ThenToBigNumber").addEventListener('click', checkIfFirstNumberIsTwiceTheSecond, true);
 document.getElementById("button_CheckIfNumberIsDivisibleBy3").addEventListener('click',checkIfNumberDivisibleBy3 , true);
+document.getElementById("button_CheckIfNumberIsOddOrEven").addEventListener('click', oddOrEven, true);
 
 function checkIfFirstNumberIsTheGreatest() {
     var numbers = document.getElementById("input_numbers_Greatest").value.split(',');
@@ -25,6 +26,15 @@ function checkIfNumberDivisibleBy3() {
         document.getElementById("showNumberIfDivisibleBy3WithNoRest").innerHTML = "Number can be divided by three (number%3): " + number;
     } else {
         document.getElementById("showNumberIfDivisibleBy3WithNoRest").innerHTML = "Number cannot be divided by three (number%3): ";
+
+    }
+}
+function oddOrEven() {
+    var number = document.getElementById("input_number_OddOrEven").value;
+    if ((number % 2) === 0) {
+        document.getElementById("tellIfNumberIsOddOrEven").innerHTML = "Your number is even";
+    } else {
+        document.getElementById("tellIfNumberIsOddOrEven").innerHTML = "Your number is odd";
 
     }
 }
