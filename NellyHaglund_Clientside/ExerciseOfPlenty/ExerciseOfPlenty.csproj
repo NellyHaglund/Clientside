@@ -77,7 +77,9 @@
   <ItemGroup>
     <Content Include="PageToOtherPages.html" />
     <Content Include="Script\Sekvensboxar.js" />
+    <Content Include="Script\ValOchAlternativ.js" />
     <Content Include="Uppgift_1\Sekvensboxar.html" />
+    <Content Include="Uppgift_2\ValOchAlternativ.html" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
