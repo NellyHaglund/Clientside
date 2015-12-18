@@ -3,6 +3,7 @@ document.getElementById("button_IfFirstNumberIsTwiceAsSecond_ThenToBigNumber").a
 document.getElementById("button_CheckIfNumberIsDivisibleBy3").addEventListener('click',checkIfNumberDivisibleBy3 , true);
 document.getElementById("button_CheckIfNumberIsOddOrEven").addEventListener('click', oddOrEven, true);
 document.getElementById("button_canDivideFirstNumberWithSecond").addEventListener('click', oneNumberDivisibleByAnother, true);
+document.getElementById("button_ToPay").addEventListener('click', calculatePaymentSum, true);
 
 function checkIfFirstNumberIsTheGreatest() {
     var numbers = document.getElementById("input_numbers_Greatest").value.split(',');
@@ -47,4 +48,12 @@ function oneNumberDivisibleByAnother() {
         document.getElementById("firstNumberDivisibleWithSecond").innerHTML = "First number is NOT divisible by the second";
 
     }
+}
+function calculatePaymentSum() {
+    var amount = Number(document.getElementById("input_items").value);
+    var pricePerUnit = Number(document.getElementById("input_pricePerUnit").value);
+    var percentToPay = 0.9;
+    var paymentSum = (amount * pricePerUnit) * percentToPay;
+    document.getElementById("paymentSum").innerHTML = "You must pay: " + paymentSum + "SEK";
+
 }
