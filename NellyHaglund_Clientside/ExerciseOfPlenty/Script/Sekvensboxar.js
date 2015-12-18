@@ -29,7 +29,7 @@ function calculateMinutesAndSecondsOnGivenHours() {
 }
 
 function calculateSumAndAverage() {
-    var numbers = document.getElementById("input_numbers").value.split(',');
+    var numbers = document.getElementById("input_numbers_Greatest").value.split(',');
     var sum = 0;
     numbers.forEach(x => sum += Number(x));
     var average = sum / numbers.length;
