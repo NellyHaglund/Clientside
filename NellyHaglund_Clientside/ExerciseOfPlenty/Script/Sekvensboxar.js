@@ -3,6 +3,7 @@ document.getElementById("button_calculateWage").addEventListener('click', calcul
 document.getElementById("button_calculateHoursIntoMinutesAndSeconds").addEventListener('click', calculateMinutesAndSecondsOnGivenHours, true);
 document.getElementById("button_calculateSumAndAverage").addEventListener('click', calculateSumAndAverage, true);
 document.getElementById("button_convertSEKtoPoundsAndDollars").addEventListener('click', convertSEKtoPoundAndDollar, true);
+document.getElementById("button_calculateFunction").addEventListener('click', calculateFunction, true);
 
 function calculateSquare() {
     var numberToCalc = Number(document.getElementById("input_numberToSquare").value);
@@ -34,8 +35,6 @@ function calculateSumAndAverage() {
     var average = sum / numbers.length;
     var resultString = "Sum of your numbers = " + sum + " / Average of your numbers: " + average;
     document.getElementById("sumAndAverage").innerHTML = resultString;
-
-
 }
 
 function convertSEKtoPoundAndDollar() {
@@ -46,4 +45,11 @@ function convertSEKtoPoundAndDollar() {
     var dollar = integer / oneDollarInSek;
     var resultString = "Your SEK in pounds = " + pounds + " / Your SEK in dollar = " + dollar;
     document.getElementById("SEKinPoundsAndDollars").innerHTML = resultString;
+}
+
+function calculateFunction() {
+    //function ax3+7
+    var a = document.getElementById("input_numberA").value;
+    var x = document.getElementById("input_numberX").value;
+
 }
