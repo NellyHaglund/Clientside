@@ -52,4 +52,6 @@ function calculateFunction() {
     var a = document.getElementById("input_numberA").value;
     var x = document.getElementById("input_numberX").value;
 
+    var sum = (a * x * 3) + 7;
+    document.getElementById("functionResult").innerHTML = sum;
 }
