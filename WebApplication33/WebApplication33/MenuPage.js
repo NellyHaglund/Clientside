@@ -24,7 +24,7 @@ function happyHourPrice() {
 //Method calls:
 
 happyHourPrice();
-AddImages();
+addBurgerImages();
 
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
@@ -35,14 +35,8 @@ function adjustPrice(price) {
 
 /*Add pictures function to span:*/
 
-
-/*Add todays offer function. 
-Make price background red. 
-Reduce price by another 20%:*/
-
-
-function AddImages() {
-    var spanElements = document.getElementsByTagName('span');   
+function addBurgerImages() {
+    var spanElements = document.getElementsByTagName('span');
     console.log(spanElements);
     for (var i = 0; i < spanElements.length; i++) {
         var element = document.createElement('img');
@@ -51,6 +45,12 @@ function AddImages() {
         spanElements[i].appendChild(element);
     }
 }
+
+/*Add todays offer function. 
+Make price background red. 
+Reduce price by another 20%:*/
+
+
 
 
 /*Stretch exercises: (increasing tuffness for each number!)
