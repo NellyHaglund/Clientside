@@ -1,9 +1,37 @@
-﻿//happy hour logic:
+﻿
+//happy hour logic:
+var mondayPrice = document.getElementById("monday").innerHTML;
+var tusedayPrice = document.getElementById("tuseday").innerHTML;
+var wednesdayPrice = document.getElementById("wednesday").innerHTML;
+var thursdayPrice = document.getElementById("thursday").innerHTML;
+var fridayPrice = document.getElementById("friday").innerHTML;
+var saturdayPrice = document.getElementById("saturday").innerHTML;
+var sundayPrice = document.getElementById("sunday").innerHTML;
+
+var prices = document.getElementsByClassName("price");
+console.log(prices);
+
+var date = new Date().getHours();
+console.log(date);
+
+function happyHourPrice() {
+    if (date >= 11 && date <= 12) {
+        for (var i = 0; i < prices.length; i++) {
+            var price = Number(prices[i].innerHTML);
+            var newPrice = adjustPrice(price * 0.7);
+            prices[i].innerHTML = newPrice;
+        }
+    }
+}
 
 //Method calls:
 
-
 //Adjust price function: (add .toFixed(2) for 2 decimals)
+
+function adjustPrice(price) {
+    return price.toFixed(2);
+}
+
 
 /*Add pictures function to span:*/
 
