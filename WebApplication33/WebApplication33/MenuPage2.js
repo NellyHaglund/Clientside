@@ -18,9 +18,9 @@ var daysOfTheWeek = [
             "sunday"
 ];
 
-fillHtmlPageWithMenu();
+fillHtmlPageWithBurgers();
 
-function fillHtmlPageWithMenu() {
+function fillHtmlPageWithBurgers() {
 
     var body = document.getElementsByTagName('body');
     var newHeading = document.createElement('h1');

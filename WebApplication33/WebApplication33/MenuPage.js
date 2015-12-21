@@ -57,7 +57,7 @@ function todaysOffer() {
     var currentDay = new Date().getDay();
 
     for (var i = 0; i < daysOfTheWeek.length; i++) {
-        if (i == currentDay) {
+        if (i === currentDay) {
             var element = document.getElementById(daysOfTheWeek[i]);
             element.setAttribute('class', 'todaysOfferPrice');
             var price = element.innerHTML;
