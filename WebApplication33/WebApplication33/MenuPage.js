@@ -1,5 +1,4 @@
-﻿
-//happy hour logic:
+﻿//happy hour logic:
 var mondayPrice = document.getElementById("monday").innerHTML;
 var tusedayPrice = document.getElementById("tuseday").innerHTML;
 var wednesdayPrice = document.getElementById("wednesday").innerHTML;
@@ -9,13 +8,11 @@ var saturdayPrice = document.getElementById("saturday").innerHTML;
 var sundayPrice = document.getElementById("sunday").innerHTML;
 
 var prices = document.getElementsByClassName("price");
-console.log(prices);
 
 var date = new Date().getHours();
-console.log(date);
 
 function happyHourPrice() {
-    if (date >= 11 && date <= 12) {
+    if (date >= 13 && date <= 19) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML);
             var newPrice = adjustPrice(price * 0.7);
@@ -26,6 +23,9 @@ function happyHourPrice() {
 
 //Method calls:
 
+happyHourPrice();
+AddImages();
+
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
 function adjustPrice(price) {
@@ -35,9 +35,23 @@ function adjustPrice(price) {
 
 /*Add pictures function to span:*/
 
+
 /*Add todays offer function. 
 Make price background red. 
 Reduce price by another 20%:*/
+
+
+function AddImages() {
+    var spanElements = document.getElementsByTagName('span');   
+    console.log(spanElements);
+    for (var i = 0; i < spanElements.length; i++) {
+        var element = document.createElement('img');
+        element.setAttribute('src', 'Images/Hamburger.png');
+        spanElements[i].innerHTML = "";
+        spanElements[i].appendChild(element);
+    }
+}
+
 
 /*Stretch exercises: (increasing tuffness for each number!)
 
