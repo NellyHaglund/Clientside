@@ -121,3 +121,7 @@ function fillHtmlPageWithSubs() {
         span.appendChild(element);
     }
 }
+
+function fillHtmlPageWithPizza() {
+    
+}
