@@ -17,27 +17,32 @@ var daysOfTheWeek = [
       "saturday",
             "sunday"
 ];
+var body = document.getElementsByTagName('body');
 
 fillHtmlPageWithBurgers();
 fillHtmlPageWithSubs();
 
+
 function fillHtmlPageWithBurgers() {
 
-    var body = document.getElementsByTagName('body');
     var newHeading = document.createElement('h1');
     newHeading.setAttribute('id', 'ad');
     newHeading.innerHTML = "Menu!";
     body[0].appendChild(newHeading);
+    var container = document.createElement('div');
+    container.setAttribute('id', 'burgers');
+    body[0].appendChild(container);
+ 
     var menuBurgers = document.createElement('h2');
     menuBurgers.innerHTML = "Delicious burgers";
-    body[0].appendChild(menuBurgers);
+    container.appendChild(menuBurgers);
 
     for (var i = 0; i < burgersWithPrice.length; i++) {
 
         var burgerSplit = burgersWithPrice[i].split(' ');
 
         var article = document.createElement('article');
-        body[0].appendChild(article);
+        container.appendChild(article);
 
         var fieldset = document.createElement('fieldset');
         article.appendChild(fieldset);
@@ -66,8 +71,5 @@ function fillHtmlPageWithBurgers() {
 }
 
 function fillHtmlPageWithSubs() {
-    var body = document.getElementsByTagName('body');
-    var menuSubs = document.createElement('h2');
-    menuSubs.innerHTML = "Delicious subs";
-    body[0].appendChild(menuSubs);
+ 
 }
