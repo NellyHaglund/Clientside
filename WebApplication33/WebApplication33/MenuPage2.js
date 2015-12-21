@@ -8,6 +8,16 @@
     "onion 19.90"
 ];
 
+var subsWithPrice = [
+    "bigbang 39.90",
+    "jum 19.90",
+    "cheese 29.90",
+    "whoopy 19.90",
+    "green 15.90",
+    "filled 199.90",
+    "onion 19.90"
+];
+
 var daysOfTheWeek = [
       "monday",
       "tuseday",
@@ -71,5 +81,43 @@ function fillHtmlPageWithBurgers() {
 }
 
 function fillHtmlPageWithSubs() {
- 
+    var container = document.createElement('div');
+    container.setAttribute('id', 'subs');
+    body[0].appendChild(container);
+
+    var menuSubs = document.createElement('h2');
+    menuSubs.innerHTML = "Delicious subs";
+    container.appendChild(menuSubs);
+
+    for (var i = 0; i < subsWithPrice.length; i++) {
+
+        var subSplit = subsWithPrice[i].split(' ');
+
+        var article = document.createElement('article');
+        container.appendChild(article);
+
+        var fieldset = document.createElement('fieldset');
+        article.appendChild(fieldset);
+
+        var legend = document.createElement('legend');
+        legend.innerHTML = daysOfTheWeek[i] + " Sub";
+
+        var h3 = document.createElement('h3');
+        h3.innerHTML = subSplit[0] + " Sub";
+
+        var span = document.createElement('span');
+
+        var priceDiv = document.createElement('div');
+        priceDiv.setAttribute('class', 'price');
+        priceDiv.innerHTML = subSplit[1];
+
+        fieldset.appendChild(legend);
+        fieldset.appendChild(h3);
+        fieldset.appendChild(span);
+        fieldset.appendChild(priceDiv);
+
+        var element = document.createElement('img');
+        element.setAttribute('src', 'Images/Subs.png');
+        span.appendChild(element);
+    }
 }
