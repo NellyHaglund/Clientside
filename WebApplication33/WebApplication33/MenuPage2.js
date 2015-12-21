@@ -17,6 +17,15 @@ var subsWithPrice = [
     "filled 199.90",
     "onion 19.90"
 ];
+var pizzaWithPrice = [
+    "margaritha 39.90",
+    "fungi 19.90",
+    "vegetale 29.90",
+    "mushrooms 19.90",
+    "cheese 15.90",
+    "qourn 199.90",
+    "onion 19.90"
+];
 
 var daysOfTheWeek = [
       "monday",
@@ -31,6 +40,7 @@ var body = document.getElementsByTagName('body');
 
 fillHtmlPageWithBurgers();
 fillHtmlPageWithSubs();
+fillHtmlPageWithPizza();
 
 
 function fillHtmlPageWithBurgers() {
@@ -123,5 +133,43 @@ function fillHtmlPageWithSubs() {
 }
 
 function fillHtmlPageWithPizza() {
-    
+    var container = document.createElement('div');
+    container.setAttribute('id', 'pizza');
+    body[0].appendChild(container);
+
+    var menuPizza = document.createElement('h2');
+    menuPizza.innerHTML = "Delicious Pizza";
+    container.appendChild(menuPizza);
+
+    for (var i = 0; i < pizzaWithPrice.length; i++) {
+
+        var pizzaSplit = pizzaWithPrice[i].split(' ');
+
+        var article = document.createElement('article');
+        container.appendChild(article);
+
+        var fieldset = document.createElement('fieldset');
+        article.appendChild(fieldset);
+
+        var legend = document.createElement('legend');
+        legend.innerHTML = daysOfTheWeek[i] + " Pizza";
+
+        var h3 = document.createElement('h3');
+        h3.innerHTML = pizzaSplit[0] + " Pizza";
+
+        var span = document.createElement('span');
+
+        var priceDiv = document.createElement('div');
+        priceDiv.setAttribute('class', 'price');
+        priceDiv.innerHTML = pizzaSplit[1];
+
+        fieldset.appendChild(legend);
+        fieldset.appendChild(h3);
+        fieldset.appendChild(span);
+        fieldset.appendChild(priceDiv);
+
+        var element = document.createElement('img');
+        element.setAttribute('src', 'Images/Pizza.png');
+        span.appendChild(element);
+    }
 }
