@@ -19,6 +19,7 @@ var daysOfTheWeek = [
 ];
 
 fillHtmlPageWithBurgers();
+fillHtmlPageWithSubs();
 
 function fillHtmlPageWithBurgers() {
 
@@ -27,9 +28,9 @@ function fillHtmlPageWithBurgers() {
     newHeading.setAttribute('id', 'ad');
     newHeading.innerHTML = "Menu!";
     body[0].appendChild(newHeading);
-    var menuTab = document.createElement('h2');
-    menuTab.innerHTML = "Delicious burgers";
-    body[0].appendChild(menuTab);
+    var menuBurgers = document.createElement('h2');
+    menuBurgers.innerHTML = "Delicious burgers";
+    body[0].appendChild(menuBurgers);
 
     for (var i = 0; i < burgersWithPrice.length; i++) {
 
@@ -62,4 +63,11 @@ function fillHtmlPageWithBurgers() {
         element.setAttribute('src', 'Images/Hamburger.png');
         span.appendChild(element);
     }
+}
+
+function fillHtmlPageWithSubs() {
+    var body = document.getElementsByTagName('body');
+    var menuSubs = document.createElement('h2');
+    menuSubs.innerHTML = "Delicious subs";
+    body[0].appendChild(menuSubs);
 }
