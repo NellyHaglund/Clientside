@@ -173,3 +173,7 @@ function fillHtmlPageWithPizza() {
         span.appendChild(element);
     }
 }
+
+function fillHtmlPageWithDrinks() {
+    
+}
