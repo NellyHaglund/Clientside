@@ -12,7 +12,7 @@ var prices = document.getElementsByClassName("price");
 var date = new Date().getHours();
 
 function happyHourPrice() {
-    if (date >= 13 && date <= 19) {
+    if (date >= 17 && date <= 19) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML);
             var newPrice = adjustPrice(price * 0.7);
@@ -25,6 +25,7 @@ function happyHourPrice() {
 
 happyHourPrice();
 addBurgerImages();
+todaysOffer();
 
 //Adjust price function: (add .toFixed(2) for 2 decimals)
 
@@ -50,6 +51,28 @@ function addBurgerImages() {
 Make price background red. 
 Reduce price by another 20%:*/
 
+function todaysOffer() {
+    var daysOfTheWeek = [
+        "sunday",
+        "monday",
+        "tuseday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ];
+
+    var currentDay = new Date().getDay();
+
+    for (var i = 0; i < daysOfTheWeek.length; i++) {
+        if (i == currentDay) {
+            var element = document.getElementById(daysOfTheWeek[i]);
+            var price = element.innerHTML;
+            var newPrice = price * 0.80;
+            element.innerHTML = newPrice;
+        }
+    }
+}
 
 
 
