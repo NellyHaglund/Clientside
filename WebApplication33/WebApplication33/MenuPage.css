@@ -33,6 +33,15 @@ article, .price{
     text-align: center;
 }
 
+.todaysOfferPrice {
+        margin: 0 auto;
+         -ms-border-radius: 20px;
+    border-radius: 20px;
+    width: 60%; 
+    text-align: center;
+    background-color: red;
+}
+
 fieldset {
     background-color: lightblue;
     text-decoration: underline;
