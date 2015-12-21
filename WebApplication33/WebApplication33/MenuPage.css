@@ -2,13 +2,16 @@
     background-color: #b8860b;
     font-family: Algerian;
 }
-fieldset {
+fieldset, article {
     width: 12%;
     height: 20%;
-    float: left;
+    display: inline;
 
 }
 
+article {
+    background-color: #b8860b;
+}
 img {
     width: 60px;
 }
@@ -23,7 +26,7 @@ h1, h2 {
 h3 {
     font-size: .7rem;
 }
-article, .price{
+.price{
     background-color: #dcdcdc;
     margin: 0 auto;
 
