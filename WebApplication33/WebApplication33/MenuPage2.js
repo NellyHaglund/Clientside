@@ -27,6 +27,14 @@ var pizzaWithPrice = [
     "onion 19.90"
 ];
 
+var drinkWithPrice = [
+    "Daiquiri 39.90",
+    "BloodyMary 19.90",
+    "Wine 29.90",
+    "Beer 19.90",
+    "Water 15.90"
+];
+
 var daysOfTheWeek = [
       "monday",
       "tuseday",
@@ -41,6 +49,7 @@ var body = document.getElementsByTagName('body');
 fillHtmlPageWithBurgers();
 fillHtmlPageWithSubs();
 fillHtmlPageWithPizza();
+fillHtmlPageWithDrinks();
 
 
 function fillHtmlPageWithBurgers() {
@@ -175,5 +184,43 @@ function fillHtmlPageWithPizza() {
 }
 
 function fillHtmlPageWithDrinks() {
-    
+    var container = document.createElement('div');
+    container.setAttribute('id', 'drinks');
+    body[0].appendChild(container);
+
+    var menuPizza = document.createElement('h2');
+    menuPizza.innerHTML = "Delicious Drinks";
+    container.appendChild(menuPizza);
+
+    for (var i = 0; i < drinkWithPrice.length; i++) {
+
+        var drinkSplit = drinkWithPrice[i].split(' ');
+
+        var article = document.createElement('article');
+        container.appendChild(article);
+
+        var fieldset = document.createElement('fieldset');
+        article.appendChild(fieldset);
+
+        var legend = document.createElement('legend');
+        legend.innerHTML = daysOfTheWeek[i] + " Drink";
+
+        var h3 = document.createElement('h3');
+        h3.innerHTML = drinkSplit[0] + " Drink";
+
+        var span = document.createElement('span');
+
+        var priceDiv = document.createElement('div');
+        priceDiv.setAttribute('class', 'price');
+        priceDiv.innerHTML = drinkSplit[1];
+
+        fieldset.appendChild(legend);
+        fieldset.appendChild(h3);
+        fieldset.appendChild(span);
+        fieldset.appendChild(priceDiv);
+
+        var element = document.createElement('img');
+        element.setAttribute('src', 'Images/Drink.png');
+        span.appendChild(element);
+    }
 }
