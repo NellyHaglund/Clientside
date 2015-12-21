@@ -72,6 +72,8 @@
     <Content Include="Menu.html" />
     <Content Include="MenuPage.css" />
     <Content Include="MenuPage.js" />
+    <Content Include="MenuPage2.html" />
+    <Content Include="MenuPage2.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>

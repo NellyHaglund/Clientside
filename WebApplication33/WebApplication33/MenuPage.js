@@ -1,12 +1,4 @@
 ﻿//happy hour logic:
-var mondayPrice = document.getElementById("monday").innerHTML;
-var tusedayPrice = document.getElementById("tuseday").innerHTML;
-var wednesdayPrice = document.getElementById("wednesday").innerHTML;
-var thursdayPrice = document.getElementById("thursday").innerHTML;
-var fridayPrice = document.getElementById("friday").innerHTML;
-var saturdayPrice = document.getElementById("saturday").innerHTML;
-var sundayPrice = document.getElementById("sunday").innerHTML;
-
 var prices = document.getElementsByClassName("price");
 
 var date = new Date().getHours();
@@ -76,10 +68,10 @@ function todaysOffer() {
 }
 
 
-
 /*Stretch exercises: (increasing tuffness for each number!)
 
  1. Automate todays offer to be dependent of the day of the week
+        Already done?
  2. Create an HTML page with an empty body and then fill it with help from JS.
     -use array with names and price of the burgers seperated by a simple "space"
     -use a loop to add all the html with different burgers
