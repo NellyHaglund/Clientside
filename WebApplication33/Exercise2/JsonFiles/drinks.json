@@ -1,43 +1,49 @@
 ﻿{
-    "heading" : "Delicious Drinks",
+    "heading": "Delicious Drinks",
     "drinks": [
-         {
+        {
             "dayOfTheWeek": "monday",
             "name": "Pepper drink",
             "price": "19.90",
             "size": "4",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "tuesday",
             "name": "Daquiri drink",
             "price": "19.90",
             "size": "2",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "wednesday",
             "name": "Salty drink",
             "price": "19.90",
             "size": "6",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "thursday",
             "name": "wine drink",
             "price": "19.90",
             "size": "3",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "friday",
             "name": "some drink",
             "price": "19.90",
             "size": "10",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "saturday",
             "name": "Sweet'n'sour drink",
             "price": "19.90",
             "size": "4",
             "img": "Images/Drink.png"
-        },{
+        },
+        {
             "dayOfTheWeek": "sunday",
             "name": "Lemon drink",
             "price": "19.90",
