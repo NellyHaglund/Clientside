@@ -1,0 +1,48 @@
+﻿{
+    "heading" : "Delicious Drinks",
+    "hamburgers": [
+        {
+            "day" :  "monday",
+            "legend": "Monday Drink",
+            "h3": "Pepper Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "tuseday",
+            "legend": "Tuseday Drink",
+            "h3": "Jum Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "Wednesday",
+            "legend": "Wednesday Drink",
+            "h3": "Cheese Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "Thursday",
+            "legend": "Thursday Drink",
+            "h3": "Simple Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "Friday",
+            "legend": "Friday Drink",
+            "h3": "Maximum Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "Saturday",
+            "legend": "Saturday Drink",
+            "h3": "Sallad Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        },  {
+            "day" :  "Sunday",
+            "legend": "Sunday Drink",
+            "h3": "Onion Drink",
+            "price": "19.90",
+            "img" :  "Images/Drink.png"
+        }
+    ]
+}

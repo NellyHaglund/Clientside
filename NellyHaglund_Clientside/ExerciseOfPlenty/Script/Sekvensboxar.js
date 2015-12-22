@@ -14,10 +14,12 @@ function calculateSquare() {
 function calculateSum() {
     var baseSalary = 15000;
     var salesAmount = document.getElementById("input_salesAmount").value;
+    var period = 10;
     var precentOfSalesAmount = 0.09;
     var extraToSalary = salesAmount * precentOfSalesAmount;
     var totalWage = baseSalary + extraToSalary;
-    document.getElementById("totalWage").innerHTML = totalWage;
+    var finalWage = totalWage * 10;
+    document.getElementById("totalWage").innerHTML = finalWage;
 }
 
 function calculateMinutesAndSecondsOnGivenHours() {

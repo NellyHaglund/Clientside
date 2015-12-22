@@ -43,7 +43,6 @@
             "h3": "Onion Burger",
             "price": "19.90",
             "img" :  "Images/Hamburger.png"
-        },
-
+        }
     ]
 }
