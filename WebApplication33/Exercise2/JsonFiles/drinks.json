@@ -1,48 +1,48 @@
 ﻿{
     "heading" : "Delicious Drinks",
-    "hamburgers": [
-        {
-            "day" :  "monday",
-            "legend": "Monday Drink",
-            "h3": "Pepper Drink",
+    "drinks": [
+         {
+            "dayOfTheWeek": "monday",
+            "name": "Pepper drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "tuseday",
-            "legend": "Tuseday Drink",
-            "h3": "Jum Drink",
+            "size": "4",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "tuesday",
+            "name": "Daquiri drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "Wednesday",
-            "legend": "Wednesday Drink",
-            "h3": "Cheese Drink",
+            "size": "2",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "wednesday",
+            "name": "Salty drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "Thursday",
-            "legend": "Thursday Drink",
-            "h3": "Simple Drink",
+            "size": "6",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "thursday",
+            "name": "wine drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "Friday",
-            "legend": "Friday Drink",
-            "h3": "Maximum Drink",
+            "size": "3",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "friday",
+            "name": "some drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "Saturday",
-            "legend": "Saturday Drink",
-            "h3": "Sallad Drink",
+            "size": "10",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "saturday",
+            "name": "Sweet'n'sour drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        },  {
-            "day" :  "Sunday",
-            "legend": "Sunday Drink",
-            "h3": "Onion Drink",
+            "size": "4",
+            "img": "Images/Drink.png"
+        },{
+            "dayOfTheWeek": "sunday",
+            "name": "Lemon drink",
             "price": "19.90",
-            "img" :  "Images/Drink.png"
-        }
+            "size": "4",
+            "img": "Images/Drink.png"
+        },
     ]
 }
