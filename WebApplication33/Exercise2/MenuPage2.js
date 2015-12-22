@@ -12,10 +12,60 @@
 */
 //DRINKS
 //Subs
+
+//Constructor function
 function Product(dayOfTheWeek, name, price, size, img) {
     this.dayOfTheWeek = dayOfTheWeek;
     this.name = name;
-    this.price = price;
+    this.price = calculatePrice(price, dayOfTheWeek);
     this.size = size;
     this.img = img;
+}
+
+//Read json file - hamburgers
+var request;
+if (window.XMLHttpRequest) {
+    request = new XMLHttpRequest();
+} else {
+    request = new ActiveXObject("Microsoft.XMLHTTP");
+}
+request.open("GET", "JsonFiles/hamburger.json");
+
+request.onreadystatechange = function () {
+
+    if (request.readyState === 4 && request.status === 200) {
+        var jsonHamburgers = JSON.parse(request.responseText);
+
+    }
+}
+request.send();
+
+function calculatePrice(price, dayOfTheWeek) {
+    var newPrice = price;
+
+    //Reduce 30% while happy hours
+    var hour = new Date().getHours();
+    if (hour >= 17 && hour <= 19) {
+        newPrice = (price * 0.7);
+    }
+
+    var daysOfTheWeek = [
+     "sunday",
+     "monday",
+     "tuseday",
+     "wednesday",
+     "thursday",
+     "friday",
+     "saturday"
+    ];
+
+    //Reduce exta 20% if burger is burger of the day
+    var currentDay = new Date().getDay();
+
+    for (var i = 0; i < daysOfTheWeek.length; i++) {
+        if (i === dayOfTheWeek && daysOfTheWeek[i] === dayOfTheWeek) {
+            newPrice *= 0.8;
+        }
+    }
+    return newPrice;
 }
