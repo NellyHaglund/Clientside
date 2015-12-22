@@ -1,48 +1,55 @@
 ﻿{
-    "heading" : "Delicious Burgers",
+    "heading": "Delicious Burgers",
     "hamburgers": [
         {
-            "day" :  "monday",
-            "legend": "Monday Burger",
-            "h3": "Pepper Burger",
+            "dayOfTheWeek": "monday",
+            "name": "Pepper Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "tuseday",
-            "legend": "Tuseday Burger",
-            "h3": "Jum Burger",
+            "size": "150",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "tuesday",
+            "name": "Cinnamon Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "Wednesday",
-            "legend": "Wednesday Burger",
-            "h3": "Cheese Burger",
+            "size": "100",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "wednesday",
+            "name": "salty Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "Thursday",
-            "legend": "Thursday Burger",
-            "h3": "Simple Burger",
+            "size": "150",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "thursday",
+            "name": "sallad Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "Friday",
-            "legend": "Friday Burger",
-            "h3": "Maximum Burger",
+            "size": "50",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "friday",
+            "name": "simple Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "Saturday",
-            "legend": "Saturday Burger",
-            "h3": "Sallad Burger",
+            "size": "90",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "saturday",
+            "name": "maximum Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        },  {
-            "day" :  "Sunday",
-            "legend": "Sunday Burger",
-            "h3": "Onion Burger",
+            "size": "150",
+            "img": "Images/Hamburger.png"
+        },
+        {
+            "dayOfTheWeek": "sunday",
+            "name": "onion Burger",
             "price": "19.90",
-            "img" :  "Images/Hamburger.png"
-        }
+            "size": "90",
+            "img": "Images/Hamburger.png"
+        },
+
     ]
 }
