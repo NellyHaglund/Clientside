@@ -1,0 +1,49 @@
+﻿{
+    "heading" : "Delicious Burgers",
+    "hamburgers": [
+        {
+            "day" :  "monday",
+            "legend": "Monday Burger",
+            "h3": "Pepper Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "tuseday",
+            "legend": "Tuseday Burger",
+            "h3": "Jum Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "Wednesday",
+            "legend": "Wednesday Burger",
+            "h3": "Cheese Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "Thursday",
+            "legend": "Thursday Burger",
+            "h3": "Simple Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "Friday",
+            "legend": "Friday Burger",
+            "h3": "Maximum Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "Saturday",
+            "legend": "Saturday Burger",
+            "h3": "Sallad Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },  {
+            "day" :  "Sunday",
+            "legend": "Sunday Burger",
+            "h3": "Onion Burger",
+            "price": "19.90",
+            "img" :  "Images/Hamburger.png"
+        },
+
+    ]
+}
