@@ -58,6 +58,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="JsonFiles\hamburger.json" />
+    <Content Include="JsonFiles\subs.json" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

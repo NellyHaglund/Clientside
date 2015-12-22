@@ -1,0 +1,49 @@
+﻿{
+    "heading" : "Delicious Subs",
+    "subs": [
+        {
+            "day" :  "monday",
+            "legend": "Monday Sub",
+            "h3": "Pepper Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "tuseday",
+            "legend": "Tuseday Sub",
+            "h3": "Jum Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "Wednesday",
+            "legend": "Wednesday Sub",
+            "h3": "Cheese Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "Thursday",
+            "legend": "Thursday Sub",
+            "h3": "Simple Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "Friday",
+            "legend": "Friday Sub",
+            "h3": "Maximum Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "Saturday",
+            "legend": "Saturday Sub",
+            "h3": "Sallad Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },  {
+            "day" :  "Sunday",
+            "legend": "Sunday Sub",
+            "h3": "Onion Sub",
+            "price": "19.90",
+            "img" :  "Images/Subs.png"
+        },
+
+    ]
+}
