@@ -1,48 +1,48 @@
 ﻿{
     "heading" : "Delicious Pizza",
-    "hamburgers": [
-        {
-            "day" :  "monday",
-            "legend": "Monday Pizza",
-            "h3": "Pepper Pizza",
+    "pizza": [
+      {
+            "dayOfTheWeek": "monday",
+            "name": "Pepper Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "tuseday",
-            "legend": "Tuseday Pizza",
-            "h3": "Jum Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "tuesday",
+            "name": "Onion Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "Wednesday",
-            "legend": "Wednesday Pizza",
-            "h3": "Cheese Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "wednesday",
+            "name": "Vegetable Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "Thursday",
-            "legend": "Thursday Pizza",
-            "h3": "Simple Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "thursday",
+            "name": "Sushi Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "Friday",
-            "legend": "Friday Pizza",
-            "h3": "Maximum Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "friday",
+            "name": "Popcorn Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "Saturday",
-            "legend": "Saturday Pizza",
-            "h3": "Sallad Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "saturday",
+            "name": "Extra-everything Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        },  {
-            "day" :  "Sunday",
-            "legend": "Sunday Pizza",
-            "h3": "Onion Pizza",
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },    {
+            "dayOfTheWeek": "sunday",
+            "name": "Cheese Pizza",
             "price": "19.90",
-            "img" :  "Images/Pizza.png"
-        }
+            "size": "100",
+            "img": "Images/Pizza.png"
+        },
     ]
 }
