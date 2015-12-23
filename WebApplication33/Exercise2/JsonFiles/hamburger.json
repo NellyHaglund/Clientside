@@ -2,49 +2,49 @@
     "heading": "Delicious Burgers",
     "hamburgers": [
         {
-            "dayOfTheWeek": "monday",
+            "dayOfTheWeek": "1",
             "name": "Pepper Burger",
             "price": "19.90",
             "size": "150",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "tuesday",
+            "dayOfTheWeek": "2",
             "name": "Cinnamon Burger",
             "price": "19.90",
             "size": "100",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "wednesday",
+            "dayOfTheWeek": "3",
             "name": "salty Burger",
             "price": "19.90",
             "size": "150",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "thursday",
+            "dayOfTheWeek": "4",
             "name": "sallad Burger",
             "price": "19.90",
             "size": "50",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "friday",
+            "dayOfTheWeek": "5",
             "name": "simple Burger",
             "price": "19.90",
             "size": "90",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "saturday",
+            "dayOfTheWeek": "6",
             "name": "maximum Burger",
             "price": "19.90",
             "size": "150",
             "img": "Images/Hamburger.png"
         },
         {
-            "dayOfTheWeek": "sunday",
+            "dayOfTheWeek": "0",
             "name": "onion Burger",
             "price": "19.90",
             "size": "90",
