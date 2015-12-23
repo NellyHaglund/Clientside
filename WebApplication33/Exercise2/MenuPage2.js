@@ -12,8 +12,8 @@
 */
 //DRINKS
 //Subs
-
 handleRequest();
+
 
 
 //Constructor function
@@ -26,6 +26,8 @@ function Product(dayOfTheWeek, name, price, size, img) {
 }
 
 var listOfProducts = new Array;
+
+
 //Read json file - hamburgers
 
 function handleRequest() {
@@ -38,19 +40,17 @@ function handleRequest() {
     request.open("GET", "JsonFiles/hamburger.json");
 
     request.onreadystatechange = function () {
-
         if (request.readyState === 4 && request.status === 200) {
             var jsonHamburgers = JSON.parse(request.responseText);
-
             addProductFromJson(jsonHamburgers);
-            alert(listOfProducts[2].price);
+            addProductsToPage(jsonHamburgers.heading);
         }
-
     };
     request.send();
 }
 
 function addProductFromJson(jsonHamburgers) {
+    hamburgerHeading = jsonHamburgers.heading;
     for (var i = 0; i < jsonHamburgers.hamburgers.length; i++) {
         listOfProducts.push(new Product(jsonHamburgers.hamburgers[i].dayOfTheWeek,
             jsonHamburgers.hamburgers[i].name,
@@ -77,4 +77,40 @@ function calculatePrice(price, dayOfTheWeek) {
     }
     //}
     return newPrice;
+}
+
+function addProductsToPage(heading) {
+
+    var daysOfTheWeek = [
+      "monday",
+      "tuseday",
+      "wednesday",
+      "thursday",
+      "friday",
+      "saturday",
+            "sunday"
+    ];
+    var container = document.getElementById("burgersPlace");
+    var h2 = document.createElement('h2');
+    h2.innerHTML = heading;
+    container.appendChild(h2);
+    for (var i = 0; i < listOfProducts.length; i++) {
+        var article = document.createElement('article');
+        container.appendChild(article);
+        var fieldset = document.createElement('fieldset');
+        article.appendChild(fieldset);
+        var legend = document.createElement('legend');
+        legend.innerHTML = daysOfTheWeek[listOfProducts[i].dayOfTheWeek] + " Burger";
+        fieldset.appendChild(legend);
+        var h3 = document.createElement('h3');
+        h3.innerHTML = listOfProducts[i].name;
+        fieldset.appendChild(h3);
+        var span = document.createElement('span');
+        fieldset.appendChild(span);
+        var image = document.createElement('img');
+        image.setAttribute('src', listOfProducts[i].img);
+        span.appendChild(image);
+
+    }
+
 }
