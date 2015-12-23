@@ -31,13 +31,16 @@ if (window.XMLHttpRequest) {
 }
 request.open("GET", "JsonFiles/hamburger.json");
 
-request.onreadystatechange = function () {
-
+request.onreadystatechange = function() {
+    var listOfProducts = new Array;
     if (request.readyState === 4 && request.status === 200) {
         var jsonHamburgers = JSON.parse(request.responseText);
-
+        for (var i = 0; i < jsonHamburgers.hamburgers.length; i++) {
+            listOfProducts.push(new Product(jsonHamburgers.hamburgers[i].dayOfTheWeek, jsonHamburgers.hamburgers[i].name, jsonHamburgers.hamburgers[i].price, jsonHamburgers.hamburgers[i].size, jsonHamburgers.hamburgers[i].img));
+        }
+        alert(listOfProducts[2].price);
     }
-}
+};
 request.send();
 
 function calculatePrice(price, dayOfTheWeek) {
@@ -50,13 +53,13 @@ function calculatePrice(price, dayOfTheWeek) {
     }
 
     var daysOfTheWeek = [
-     "sunday",
-     "monday",
-     "tuseday",
-     "wednesday",
-     "thursday",
-     "friday",
-     "saturday"
+        "sunday",
+        "monday",
+        "tuseday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
     ];
 
     //Reduce exta 20% if burger is burger of the day
