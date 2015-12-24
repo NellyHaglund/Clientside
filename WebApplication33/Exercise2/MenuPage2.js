@@ -14,6 +14,7 @@
 //Subs
 handleHamburgerRequest();
 handleSubRequest();
+handlePizzaRequest();
 
 //Constructor function
 
@@ -53,6 +54,25 @@ function handleSubRequest() {
             var jsonSubs = JSON.parse(request.responseText);
             addProductFromJson(jsonSubs.subs);
             addProductsToPage(jsonSubs.heading);
+        }
+    };
+    request.send();
+}
+//Read json file - Pizza
+function handlePizzaRequest() {
+    var request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", "JsonFiles/pizza.json");
+
+    request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+            var jsonPizza = JSON.parse(request.responseText);
+            addProductFromJson(jsonPizza.pizza);
+            addProductsToPage(jsonPizza.heading);
         }
     };
     request.send();

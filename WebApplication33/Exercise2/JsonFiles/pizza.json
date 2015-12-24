@@ -2,43 +2,43 @@
     "heading" : "Delicious Pizza",
     "pizza": [
       {
-            "dayOfTheWeek": "monday",
+            "dayOfTheWeek": "1",
             "name": "Pepper Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "tuesday",
+            "dayOfTheWeek": "2",
             "name": "Onion Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "wednesday",
+            "dayOfTheWeek": "3",
             "name": "Vegetable Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "thursday",
+            "dayOfTheWeek": "4",
             "name": "Sushi Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "friday",
+            "dayOfTheWeek": "5",
             "name": "Popcorn Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "saturday",
+            "dayOfTheWeek": "6",
             "name": "Extra-everything Pizza",
             "price": "19.90",
             "size": "100",
             "img": "Images/Pizza.png"
         },    {
-            "dayOfTheWeek": "sunday",
+            "dayOfTheWeek": "0",
             "name": "Cheese Pizza",
             "price": "19.90",
             "size": "100",
