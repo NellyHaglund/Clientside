@@ -76,11 +76,9 @@ function addProductsToPage(heading) {
         image.setAttribute("src", listOfProducts[i].img);
         span.appendChild(image);
         var price = document.createElement("div");
+        price.setAttribute("class", "price" );
         if (listOfProducts[i].dayOfTheWeek == currentDay) {
-            price.setAttribute("class", "price todaysOfferPrice");
-
-        } else {
-            price.setAttribute("class", "price");
+            price.style.backgroundColor = "red";
         }
         price.setAttribute("id", daysOfTheWeek[listOfProducts[i].dayOfTheWeek]);
         price.innerHTML = listOfProducts[i].price;
