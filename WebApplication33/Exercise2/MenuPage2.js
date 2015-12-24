@@ -55,13 +55,13 @@ function handleHamburgerRequest() {
     request.send();
 }
 
-function addProductFromJson(jsonHamburgers) {
-    for (var i = 0; i < jsonHamburgers.length; i++) {
-        listOfProducts.push(new Product(jsonHamburgers[i].dayOfTheWeek,
-            jsonHamburgers[i].name,
-            jsonHamburgers[i].price,
-            jsonHamburgers[i].size,
-            jsonHamburgers[i].img));
+function addProductFromJson(json) {
+    for (var i = 0; i < json.length; i++) {
+        listOfProducts.push(new Product(json[i].dayOfTheWeek,
+            json[i].name,
+            json[i].price,
+            json[i].size,
+            json[i].img));
     }
 }
 
