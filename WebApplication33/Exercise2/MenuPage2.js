@@ -13,6 +13,7 @@
 //DRINKS
 //Subs
 handleHamburgerRequest();
+handleSubRequest();
 
 //Constructor function
 function Product(dayOfTheWeek, name, price, size, img) {
@@ -25,15 +26,7 @@ function Product(dayOfTheWeek, name, price, size, img) {
 
 var listOfProducts = new Array;
 
-var daysOfTheWeek = [
-    "sunday",
-    "monday",
-    "tuseday",
-    "wednesday",
-    "thursday",
-    "friday",
-    "saturday"
-];
+
 
 //Read json file - hamburgers
 function handleHamburgerRequest() {
@@ -50,6 +43,27 @@ function handleHamburgerRequest() {
             var jsonHamburgers = JSON.parse(request.responseText);
             addProductFromJson(jsonHamburgers.hamburgers);
             addProductsToPage(jsonHamburgers.heading);
+        }
+    };
+    request.send();
+
+}
+
+//Read json file - subs
+function handleSubRequest() {
+    var request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", "JsonFiles/subs.json");
+
+    request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+            var jsonSubs = JSON.parse(request.responseText);
+            addProductFromJson(jsonSubs.subs);
+            addProductsToPage(jsonSubs.heading);
         }
     };
     request.send();
@@ -85,6 +99,15 @@ function calculatePrice(price, dayOfTheWeek) {
 
 function addProductsToPage(heading) {
 
+    var daysOfTheWeek = [
+        "sunday",
+        "monday",
+        "tuseday",
+        "wednesday",
+        "thursday",
+        "friday",
+        "saturday"
+    ];
     var currentDay = new Date().getDay();
     var headingSplit = heading.split(" ");
     var container = document.getElementById(headingSplit[1].toLowerCase() + "Place");
@@ -97,7 +120,7 @@ function addProductsToPage(heading) {
         var fieldset = document.createElement("fieldset");
         article.appendChild(fieldset);
         var legend = document.createElement("legend");
-        legend.innerHTML = (daysOfTheWeek[listOfProducts[i].dayOfTheWeek]) + " Burger";
+        legend.innerHTML = daysOfTheWeek[listOfProducts[i].dayOfTheWeek] + " " + headingSplit[1].toLowerCase();
         fieldset.appendChild(legend);
         var h3 = document.createElement("h3");
         h3.innerHTML = listOfProducts[i].name;
@@ -116,7 +139,7 @@ function addProductsToPage(heading) {
         }
         price.setAttribute("id", daysOfTheWeek[listOfProducts[i].dayOfTheWeek]);
         price.innerHTML = listOfProducts[i].price;
-
         fieldset.appendChild(price);
     }
+    listOfProducts = new Array;
 }
