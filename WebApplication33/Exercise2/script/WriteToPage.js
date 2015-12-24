@@ -55,8 +55,14 @@ function addProductsToPage(heading) {
     container.appendChild(h2);
     for (var i = 0; i < listOfProducts.length; i++) {
         var article = document.createElement("article");
+        article.style.display = "inline";
+        article.style.float = "none";
+        article.style.backgroundColor = "#b8860b";
         container.appendChild(article);
         var fieldset = document.createElement("fieldset");
+        fieldset.style.display = "inline";
+        fieldset.style.float = "none";
+
         article.appendChild(fieldset);
         var legend = document.createElement("legend");
         legend.innerHTML = daysOfTheWeek[listOfProducts[i].dayOfTheWeek] + " " + headingSplit[1].toLowerCase();
