@@ -2,49 +2,49 @@
     "heading": "Delicious Subs",
     "subs": [
         {
-            "dayOfTheWeek": "monday",
+            "dayOfTheWeek": "1",
             "name": "Pepper sub",
             "price": "19.90",
             "size": "15",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "tuesday",
+            "dayOfTheWeek": "2",
             "name": "Vegetale sub",
             "price": "19.90",
             "size": "15",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "wednesday",
+            "dayOfTheWeek": "3",
             "name": "Big sub",
             "price": "19.90",
             "size": "30",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "thursday",
+            "dayOfTheWeek": "4",
             "name": "Small sub",
             "price": "19.90",
             "size": "12",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "friday",
+            "dayOfTheWeek": "5",
             "name": "Onion sub",
             "price": "19.90",
             "size": "15",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "saturday",
+            "dayOfTheWeek": "6",
             "name": "Qourn sub",
             "price": "19.90",
             "size": "15",
             "img": "Images/Subs.png"
         },
         {
-            "dayOfTheWeek": "sunday",
+            "dayOfTheWeek": "0",
             "name": "Tomato sub",
             "price": "19.90",
             "size": "15",
