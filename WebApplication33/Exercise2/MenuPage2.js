@@ -15,6 +15,7 @@
 handleHamburgerRequest();
 handleSubRequest();
 handlePizzaRequest();
+handleDrinkRequest();
 
 //Constructor function
 
@@ -73,6 +74,26 @@ function handlePizzaRequest() {
             var jsonPizza = JSON.parse(request.responseText);
             addProductFromJson(jsonPizza.pizza);
             addProductsToPage(jsonPizza.heading);
+        }
+    };
+    request.send();
+}
+
+//Read json file - Drinks
+function handleDrinkRequest() {
+    var request;
+    if (window.XMLHttpRequest) {
+        request = new XMLHttpRequest();
+    } else {
+        request = new ActiveXObject("Microsoft.XMLHTTP");
+    }
+    request.open("GET", "JsonFiles/drinks.json");
+
+    request.onreadystatechange = function() {
+        if (request.readyState === 4 && request.status === 200) {
+            var jsonDrinks = JSON.parse(request.responseText);
+            addProductFromJson(jsonDrinks.drinks);
+            addProductsToPage(jsonDrinks.heading);
         }
     };
     request.send();
