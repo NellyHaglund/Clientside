@@ -61,7 +61,7 @@ function calculatePrice(price, dayOfTheWeek) {
     var newPrice = price;
     //Reduce 30% while happy hours
     var hour = new Date().getHours();
-    if (hour >= 17 && hour <= 19) {
+    if (hour >= 10 && hour <= 19) {
         newPrice = (price * 0.7);
     }
 
@@ -73,7 +73,7 @@ function calculatePrice(price, dayOfTheWeek) {
         newPrice *= 0.8;
     }
     //}
-    return newPrice;
+    return newPrice.toFixed(2);
 }
 
 function addProductsToPage(heading) {
@@ -89,7 +89,6 @@ function addProductsToPage(heading) {
     ];
     var currentDay = new Date().getDay();
 
-alert(currentDay);
     var container = document.getElementById("burgersPlace");
     var h2 = document.createElement("h2");
     h2.innerHTML = heading;
@@ -110,15 +109,14 @@ alert(currentDay);
         var image = document.createElement("img");
         image.setAttribute("src", listOfProducts[i].img);
         span.appendChild(image);
-        var price = document.createElement('div');
+        var price = document.createElement("div");
         if (listOfProducts[i].dayOfTheWeek == currentDay) {
-            price.setAttribute('class', 'price todaysOfferPrice');
+            price.setAttribute("class", "price todaysOfferPrice");
 
         } else {
-            price.setAttribute('class', 'price');
-
+            price.setAttribute("class", "price");
         }
-        price.setAttribute('id', daysOfTheWeek[listOfProducts[i].dayOfTheWeek]);
+        price.setAttribute("id", daysOfTheWeek[listOfProducts[i].dayOfTheWeek]);
         price.innerHTML = listOfProducts[i].price;
 
         fieldset.appendChild(price);
