@@ -12,7 +12,7 @@
 */
 //DRINKS
 //Subs
-handleRequest();
+handleHamburgerRequest();
 
 //Constructor function
 function Product(dayOfTheWeek, name, price, size, img) {
@@ -25,10 +25,18 @@ function Product(dayOfTheWeek, name, price, size, img) {
 
 var listOfProducts = new Array;
 
+var daysOfTheWeek = [
+    "sunday",
+    "monday",
+    "tuseday",
+    "wednesday",
+    "thursday",
+    "friday",
+    "saturday"
+];
 
 //Read json file - hamburgers
-
-function handleRequest() {
+function handleHamburgerRequest() {
     var request;
     if (window.XMLHttpRequest) {
         request = new XMLHttpRequest();
@@ -40,7 +48,7 @@ function handleRequest() {
     request.onreadystatechange = function() {
         if (request.readyState === 4 && request.status === 200) {
             var jsonHamburgers = JSON.parse(request.responseText);
-            addProductFromJson(jsonHamburgers);
+            addProductFromJson(jsonHamburgers.hamburgers);
             addProductsToPage(jsonHamburgers.heading);
         }
     };
@@ -48,12 +56,12 @@ function handleRequest() {
 }
 
 function addProductFromJson(jsonHamburgers) {
-    for (var i = 0; i < jsonHamburgers.hamburgers.length; i++) {
-        listOfProducts.push(new Product(jsonHamburgers.hamburgers[i].dayOfTheWeek,
-            jsonHamburgers.hamburgers[i].name,
-            jsonHamburgers.hamburgers[i].price,
-            jsonHamburgers.hamburgers[i].size,
-            jsonHamburgers.hamburgers[i].img));
+    for (var i = 0; i < jsonHamburgers.length; i++) {
+        listOfProducts.push(new Product(jsonHamburgers[i].dayOfTheWeek,
+            jsonHamburgers[i].name,
+            jsonHamburgers[i].price,
+            jsonHamburgers[i].size,
+            jsonHamburgers[i].img));
     }
 }
 
@@ -61,35 +69,25 @@ function calculatePrice(price, dayOfTheWeek) {
     var newPrice = price;
     //Reduce 30% while happy hours
     var hour = new Date().getHours();
-    if (hour >= 10 && hour <= 19) {
+    if (hour >= 17 && hour <= 19) {
         newPrice = (price * 0.7);
     }
 
     //Reduce exta 20% if burger is burger of the day
     var currentDay = new Date().getDay();
 
-    //for (var i = 0; i < daysOfTheWeek.length; i++) {
     if (currentDay == dayOfTheWeek) {
         newPrice *= 0.8;
     }
-    //}
-    return newPrice.toFixed(2);
+
+    return Number(newPrice).toFixed(2);
 }
 
 function addProductsToPage(heading) {
 
-    var daysOfTheWeek = [
-        "sunday",
-        "monday",
-        "tuseday",
-        "wednesday",
-        "thursday",
-        "friday",
-        "saturday"
-    ];
     var currentDay = new Date().getDay();
-
-    var container = document.getElementById("burgersPlace");
+    var headingSplit = heading.split(" ");
+    var container = document.getElementById(headingSplit[1].toLowerCase() + "Place");
     var h2 = document.createElement("h2");
     h2.innerHTML = heading;
     container.appendChild(h2);
