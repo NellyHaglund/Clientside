@@ -75,13 +75,17 @@ function addProductsToPage(heading) {
         var image = document.createElement("img");
         image.setAttribute("src", listOfProducts[i].img);
         span.appendChild(image);
+        var size = document.createElement("div");
+        size.innerHTML = listOfProducts[i].size;
+        size.style.textAlign = "center";
+        fieldset.appendChild(size);
         var price = document.createElement("div");
         price.setAttribute("class", "price" );
         if (listOfProducts[i].dayOfTheWeek == currentDay) {
             price.style.backgroundColor = "red";
         }
         price.setAttribute("id", daysOfTheWeek[listOfProducts[i].dayOfTheWeek]);
-        price.innerHTML = listOfProducts[i].price;
+        price.innerHTML = listOfProducts[i].price + " SEK";
         fieldset.appendChild(price);
     }
     listOfProducts = new Array;
