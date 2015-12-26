@@ -5,43 +5,43 @@
             "dayOfTheWeek": "1",
             "name": "Pepper Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "35 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "2",
             "name": "Onion Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "100 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "3",
             "name": "Vegetable Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "30 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "4",
             "name": "Sushi Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "35 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "5",
             "name": "Popcorn Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "35 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "6",
             "name": "Extra-everything Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "100 cm",
             "img": "Images/Pizza.png"
         },    {
             "dayOfTheWeek": "0",
             "name": "Cheese Pizza",
             "price": "19.90",
-            "size": "100",
+            "size": "35 cm",
             "img": "Images/Pizza.png"
         }
     ]

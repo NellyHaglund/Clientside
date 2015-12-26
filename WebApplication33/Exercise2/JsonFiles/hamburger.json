@@ -5,49 +5,49 @@
             "dayOfTheWeek": "1",
             "name": "Pepper Burger",
             "price": "19.90",
-            "size": "150",
+            "size": "150 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "2",
             "name": "Cinnamon Burger",
             "price": "19.90",
-            "size": "100",
+            "size": "100 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "3",
             "name": "salty Burger",
             "price": "19.90",
-            "size": "150",
+            "size": "150 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "4",
             "name": "sallad Burger",
             "price": "19.90",
-            "size": "50",
+            "size": "50 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "5",
             "name": "simple Burger",
             "price": "19.90",
-            "size": "90",
+            "size": "90 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "6",
             "name": "maximum Burger",
             "price": "19.90",
-            "size": "150",
+            "size": "150 g",
             "img": "Images/Hamburger.png"
         },
         {
             "dayOfTheWeek": "0",
             "name": "onion Burger",
             "price": "19.90",
-            "size": "90",
+            "size": "90 g",
             "img": "Images/Hamburger.png"
         }
     ]

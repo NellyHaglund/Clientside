@@ -5,49 +5,49 @@
             "dayOfTheWeek": "1",
             "name": "Pepper drink",
             "price": "19.90",
-            "size": "4",
+            "size": "4 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "2",
             "name": "Daquiri drink",
             "price": "19.90",
-            "size": "2",
+            "size": "2 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "3",
             "name": "Salty drink",
             "price": "19.90",
-            "size": "6",
+            "size": "6 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "4",
             "name": "wine drink",
             "price": "19.90",
-            "size": "3",
+            "size": "3 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "5",
             "name": "some drink",
             "price": "19.90",
-            "size": "10",
+            "size": "10 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "6",
             "name": "Sweet'n'sour drink",
             "price": "19.90",
-            "size": "4",
+            "size": "4 cl",
             "img": "Images/Drink.png"
         },
         {
             "dayOfTheWeek": "0",
             "name": "Lemon drink",
             "price": "19.90",
-            "size": "4",
+            "size": "4 cl",
             "img": "Images/Drink.png"
         }
     ]

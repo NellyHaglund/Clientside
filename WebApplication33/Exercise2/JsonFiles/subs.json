@@ -5,49 +5,49 @@
             "dayOfTheWeek": "1",
             "name": "Pepper sub",
             "price": "19.90",
-            "size": "15",
+            "size": "15 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "2",
             "name": "Vegetale sub",
             "price": "19.90",
-            "size": "15",
+            "size": "15 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "3",
             "name": "Big sub",
             "price": "19.90",
-            "size": "30",
+            "size": "30 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "4",
             "name": "Small sub",
             "price": "19.90",
-            "size": "12",
+            "size": "12 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "5",
             "name": "Onion sub",
             "price": "19.90",
-            "size": "15",
+            "size": "15 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "6",
             "name": "Qourn sub",
             "price": "19.90",
-            "size": "15",
+            "size": "15 cm",
             "img": "Images/Subs.png"
         },
         {
             "dayOfTheWeek": "0",
             "name": "Tomato sub",
             "price": "19.90",
-            "size": "15",
+            "size": "15 cm",
             "img": "Images/Subs.png"
         }
     ]
