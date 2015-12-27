@@ -136,12 +136,24 @@ function checkIsNumber() {
         alert(Number(array[4]) + " Jag är ett nummer");
     };
 }
-
 /*
 
 ### Math page 134: ###
 10. Round one of the numbers in the paragraph up/down
+*/
+addDiv("Round number in paragraph", roundNumber);
+function roundNumber() {
+    alert(array[4] + "--> " + Math.round(array[4]));
+}
+/*
 11. replace the 3rd word with PI then roud it to the nearest integer
+*/
+addDiv("Replace 3rd word with PI and round it to integer", replace3rd);
+function replace3rd() {
+    alert(array[2] + "--> " + Math.PI + "-->" + Math.round(Math.PI));
+}
+
+/*
 
 ### Date object###
 12. Calculate how many days it's until your birthday and present it.
