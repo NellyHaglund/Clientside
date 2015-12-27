@@ -96,31 +96,29 @@ function playWithStringMethodsAndProperties() {
     for (var i = 0; i < array.length; i++) {
         switch (true) {
             case i % 2 === 0:
-            stringToAlert += array[i].toUpperCase() +"\r\n";
-            break;
-        case i % 8 === 0:
-            stringToAlert += array[i].toLowerCase() + "\r\n";
-            break;
-        case i % 2 === 3:
-            stringToAlert += array.charAt(i) + "\r\n";
-            break;
-        case i % 10 === 0:
-            stringToAlert += array.indexOf(i) + "\r\n";
-
-            break;
-        case array[i] === "fleck":
-            stringToAlert += array.lastIndexOf("fleck") + "\r\n";
-
-            break;
-        case array[i] === "greplin":
-            stringToAlert += array[i].replace("JAG HAR BLIVIT ERSATT") + "\r\n";
-      
-            break;
+                stringToAlert += array[i].toUpperCase() + " ";
+                break;
+            case i % 8 === 0:
+                stringToAlert += array[i].toLowerCase() + " ";
+                break;
+            case i % 2 === 3:
+                stringToAlert += array.charAt(i) + " ";
+                break;
+            case i % 10 === 0:
+                stringToAlert += array.indexOf(i) + " ";
+                break;
+            case array[i] === "fleck":
+                stringToAlert += "fleck: " + array.lastIndexOf("fleck") + " ";
+                break;
+            case array[i] === "greplin":
+                stringToAlert += array[i].replace("JAG HAR BLIVIT ERSATT") + " ";
+                break;
             case array[i].length > 7:
-                stringToAlert += "Jag var längre än 7 tecken: " + array[i].substring(2, 5) + "\r\n";
-            break;
-        default:
-
+                stringToAlert += "Jag var längre än 7 tecken: " + array[i].substring(2, 5) + " ";
+                break;
+            default:
+                stringToAlert += array[i] + " ";
+                break;
         }
     }
     alert(stringToAlert);
@@ -129,6 +127,17 @@ function playWithStringMethodsAndProperties() {
 
 ### String objects page 132: ###
 9. check if the 4th element in the array is a number
+*/
+addDiv("Check if 4th element in array is a number", checkIsNumber);
+function checkIsNumber() {
+    if (isNaN(array[4])) {
+        alert(array[4] + "Inget nummer");
+    } else {
+        alert(Number(array[4]) + " Jag är ett nummer");
+    };
+}
+
+/*
 
 ### Math page 134: ###
 10. Round one of the numbers in the paragraph up/down
