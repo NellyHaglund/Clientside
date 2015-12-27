@@ -38,7 +38,14 @@ function properties() {
 /*
 4.Add a stylesheet that displays the changed words in fat font and in red.
 */
-
+var paragraphOne = document.getElementById("one");
+var spansInParagraphOne = paragraphOne.getElementsByTagName("span");
+paragraphOne.addEventListener("click", setClassToSpan, true);
+function setClassToSpan() {
+    for (var i = 0; i < spansInParagraphOne.length; i++) {
+        spansInParagraphOne[i].setAttribute("class", "makeWordFatAndRed");
+    }
+}
 /*
 5. PLay with the Methods 
 ### DOM page 126:###
