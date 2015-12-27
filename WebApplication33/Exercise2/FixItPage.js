@@ -19,7 +19,7 @@ function addDiv(innerHtmlMessage, functionToAdd) {
     box.addEventListener("click", functionToAdd, true);
 }
 
-addDiv("Click me to se some results from properties", properties);
+addDiv("Click me to se some results from window-properties", properties);
 function properties() {
     var arrayToAlert = new Array();
     arrayToAlert.push("Inner height of window (excluding browser UI): " + window.innerHeight);
@@ -61,7 +61,17 @@ function methods() {
 /*
 ### DOM page 126:###
 6. Play with the DOM-properties
-
+*/
+addDiv("Click me to see some result from DOM-properties", domProperties);
+function domProperties() {
+    var alertContent = new Array;
+    alertContent.push("Title of current document: " + document.title);
+    alertContent.push("\r\nDate on which this document was last modified: " + document.lastModified);
+    alertContent.push("\r\nURL of current document: " + document.URL);
+    alertContent.push("\r\nDomain of current document: " + document.domain);
+    alert(alertContent);
+}
+/*
 ### String objects page 128, 129: ###
 
 7. Save the the text from the makeMeAnArray-paragraph into an array.
