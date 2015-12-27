@@ -9,14 +9,12 @@ with an alert that shows the result when the box is clicked!
 3.Play with the properties at page 124 in the book. 
   Use properties creatively to display things at the html page
   */
-var box = document.createElement("div");
-box.style.border = "2px solid black";
-box.style.height = "100px";
-box.style.width = "300px";
-box.innerHTML = "Click me to see some result from properties";
+var box_Properties = document.createElement("div");
+box_Properties.setAttribute("class", "box");
+box_Properties.innerHTML = "Click me to see some result from properties";
 var body = document.getElementsByTagName("body");
-body[0].appendChild(box);
-box.addEventListener("click", properties, true);
+body[0].appendChild(box_Properties);
+box_Properties.addEventListener("click", properties, true);
 
 function properties() {
     var arrayToAlert = new Array();
@@ -33,7 +31,6 @@ function properties() {
     arrayToAlert.push("\r\nScreen object - width (including UI, all) : " + window.screen.width);
     arrayToAlert.push("\r\nScreen object - height (including UI, all) : " + window.screen.height);
     alert(arrayToAlert);
-
 };
 /*
 4.Add a stylesheet that displays the changed words in fat font and in red.
@@ -48,6 +45,25 @@ function setClassToSpan() {
 }
 /*
 5. PLay with the Methods 
+*/
+var box_Methods = document.createElement("div");
+box_Methods.setAttribute("class", "box");
+box_Methods.innerHTML = "Click me to see some result from methods";
+var body = document.getElementsByTagName("body");
+body[0].appendChild(box_Methods);
+box_Methods.addEventListener("click", methods, true);
+
+function methods() {
+
+    alert("I'm a dialog box with message, you have to press OK to continue\r\n" +
+        "Next: You will come to print mode (print()) and when you close that a new browser window will open ( window.open(url) )...");
+    print();
+    window.open("http://www.google.se", "_self");
+
+
+
+};
+/*
 ### DOM page 126:###
 6. Play with the DOM-properties
 

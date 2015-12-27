@@ -8,3 +8,11 @@
     color: red;
     font-weight: bold;
 }
+
+.box {
+    border: 2px solid black;
+    height: 100px;
+    width: 300px;
+    display: inline-block;
+    margin-right: 20px;
+}
