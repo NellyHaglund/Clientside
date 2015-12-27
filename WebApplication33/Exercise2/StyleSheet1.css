@@ -3,3 +3,8 @@
 #makeMeAnArray {
     background-color: hotpink;
 }
+
+.makeWordFatAndRed {
+    color: red;
+    font-weight: bold;
+}

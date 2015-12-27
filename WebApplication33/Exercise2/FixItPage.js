@@ -37,6 +37,9 @@ function properties() {
 };
 /*
 4.Add a stylesheet that displays the changed words in fat font and in red.
+*/
+
+/*
 5. PLay with the Methods 
 ### DOM page 126:###
 6. Play with the DOM-properties
