@@ -174,7 +174,17 @@ function daysUntilBirthday() {
 }
 /*
 13. Calculate how many minutes old you are and present it.
-
+*/
+addDiv("How many minutes old?", minutesOld);
+function minutesOld() {
+    var ageInMinutes = document.getElementById("birthdayPresentation");
+    var minutesPerYear = (24 * 60) * 365;
+    var date = new Date(1994, 12, 04).getFullYear();
+    var today = new Date().getFullYear();
+    var myAgeInMinutes = (today - date) * minutesPerYear;
+    ageInMinutes.innerHTML = "Min ålder i minuter (ungefär): " + myAgeInMinutes;
+}
+/*
 Bonus exercises:
 ### Demo page 141:###
 -Download the code to the book. Wipe the code from the js-file and rewrite it with the help from the book.
