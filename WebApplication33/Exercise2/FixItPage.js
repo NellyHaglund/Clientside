@@ -20,6 +20,7 @@ function addDiv(innerHtmlMessage, functionToAdd) {
 }
 
 addDiv("Click me to se some results from window-properties", properties);
+
 function properties() {
     var arrayToAlert = new Array();
     arrayToAlert.push("Inner height of window (excluding browser UI): " + window.innerHeight);
@@ -36,17 +37,20 @@ function properties() {
     arrayToAlert.push("\r\nScreen object - height (including UI, all) : " + window.screen.height);
     alert(arrayToAlert);
 };
+
 /*
 4.Add a stylesheet that displays the changed words in fat font and in red.
 */
 var paragraphOne = document.getElementById("one");
 var spansInParagraphOne = paragraphOne.getElementsByTagName("span");
 paragraphOne.addEventListener("click", setClassToSpan, true);
+
 function setClassToSpan() {
     for (var i = 0; i < spansInParagraphOne.length; i++) {
         spansInParagraphOne[i].setAttribute("class", "makeWordFatAndRed");
     }
 }
+
 /*
 5. PLay with the Methods 
 */
@@ -58,11 +62,13 @@ function methods() {
     print();
     window.open("http://www.google.se", "_self");
 };
+
 /*
 ### DOM page 126:###
 6. Play with the DOM-properties
 */
 addDiv("Click me to see some result from DOM-properties", domProperties);
+
 function domProperties() {
     var alertContent = new Array;
     alertContent.push("Title of current document: " + document.title);
@@ -71,11 +77,55 @@ function domProperties() {
     alertContent.push("\r\nDomain of current document: " + document.domain);
     alert(alertContent);
 }
+
 /*
 ### String objects page 128, 129: ###
 
 7. Save the the text from the makeMeAnArray-paragraph into an array.
+*/
+
+var makeMeAnArray_paragraph = document.getElementById("makeMeAnArray").innerHTML;
+var array = makeMeAnArray_paragraph.split(" ");
+
+/*
 8. Use all the string methods and propertys allong with the array
+*/
+addDiv("Click me to see some result, depending on what index word has something will happen (switch/case)", playWithStringMethodsAndProperties);
+var stringToAlert;
+function playWithStringMethodsAndProperties() {
+    for (var i = 0; i < array.length; i++) {
+        switch (true) {
+            case i % 2 === 0:
+            stringToAlert += array[i].toUpperCase() +"\r\n";
+            break;
+        case i % 8 === 0:
+            stringToAlert += array[i].toLowerCase() + "\r\n";
+            break;
+        case i % 2 === 3:
+            stringToAlert += array.charAt(i) + "\r\n";
+            break;
+        case i % 10 === 0:
+            stringToAlert += array.indexOf(i) + "\r\n";
+
+            break;
+        case array[i] === "fleck":
+            stringToAlert += array.lastIndexOf("fleck") + "\r\n";
+
+            break;
+        case array[i] === "greplin":
+            stringToAlert += array[i].replace("JAG HAR BLIVIT ERSATT") + "\r\n";
+      
+            break;
+            case array[i].length > 7:
+                stringToAlert += "Jag var längre än 7 tecken: " + array[i].substring(2, 5) + "\r\n";
+            break;
+        default:
+
+        }
+    }
+    alert(stringToAlert);
+}
+/*
 
 ### String objects page 132: ###
 9. check if the 4th element in the array is a number
