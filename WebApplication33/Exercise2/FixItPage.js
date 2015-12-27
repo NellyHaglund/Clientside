@@ -157,6 +157,22 @@ function replace3rd() {
 
 ### Date object###
 12. Calculate how many days it's until your birthday and present it.
+*/
+addDiv("Days until my birthday", daysUntilBirthday);
+function daysUntilBirthday() {
+    
+    var birthday = document.getElementById("birthdayPresentation");
+    var oneDay = 24 * 60 * 60 * 1000;
+    var today = new Date();
+    var year = today.getFullYear();
+    var date = new Date(year, 11, 04);
+    if (today > date) {
+        date = new Date((Number(year + 1)), 11, 4);
+    }
+    var untilMyBirthday = Math.round(Math.abs((today.getTime() - date.getTime()) / (oneDay)));
+    birthday.innerHTML = "Days until my birthday: " + untilMyBirthday;
+}
+/*
 13. Calculate how many minutes old you are and present it.
 
 Bonus exercises:
