@@ -8,6 +8,34 @@ with an alert that shows the result when the box is clicked!
 .........................................2. Add som tags that doesn't change the visual part of the paragraph.
 3.Play with the properties at page 124 in the book. 
   Use properties creatively to display things at the html page
+  */
+var box = document.createElement("div");
+box.style.border = "2px solid black";
+box.style.height = "100px";
+box.style.width = "300px";
+box.innerHTML = "Click me to see some result from properties";
+var body = document.getElementsByTagName("body");
+body[0].appendChild(box);
+box.addEventListener("click", properties, true);
+
+function properties() {
+    var arrayToAlert = new Array();
+    arrayToAlert.push("Inner height of window (excluding browser UI): " + window.innerHeight);
+    arrayToAlert.push("\r\nInner width of window (excluding browser UI): " + window.innerWidth);
+    arrayToAlert.push("\r\nHorizontally scroll distance in pixles: " + window.pageXOffset);
+    arrayToAlert.push("\r\nVertically scroll distance in pixles: " + window.pageYOffset);
+    arrayToAlert.push("\r\nX-coordinates of pointer in pixles: " + window.screenX);
+    arrayToAlert.push("\r\nY-coordinates of pointer in pixles: " + window.screenY);
+    arrayToAlert.push("\r\nLocal file path/current URL: " + window.location);
+    arrayToAlert.push("\r\nDocument object - that represents current page in window: " + window.document);
+    arrayToAlert.push("\r\nHistory object - back() / forward() - number of URLs in history list : " + window.history.length);
+    arrayToAlert.push("\r\nScreen object : " + window.screen);
+    arrayToAlert.push("\r\nScreen object - width (including UI, all) : " + window.screen.width);
+    arrayToAlert.push("\r\nScreen object - height (including UI, all) : " + window.screen.height);
+    alert(arrayToAlert);
+
+};
+/*
 4.Add a stylesheet that displays the changed words in fat font and in red.
 5. PLay with the Methods 
 ### DOM page 126:###
