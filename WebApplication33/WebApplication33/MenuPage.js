@@ -4,7 +4,7 @@ var prices = document.getElementsByClassName("price");
 var date = new Date().getHours();
 
 function happyHourPrice() {
-    if (date >= 08 && date <= 19) {
+    if (date >= 17 && date <= 19) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML);
             var newPrice = price * 0.7;

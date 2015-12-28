@@ -2,6 +2,7 @@
     background-color: #b8860b;
     font-family: Algerian;
 }
+
 fieldset {
     width: 12%;
     height: 20%;
@@ -11,25 +12,29 @@ fieldset {
 img {
     width: 60px;
 }
+
 h1, h2 {
     margin: 20px auto;
-    padding: 10px;   
+    padding: 10px;
     width: 30%;
     border: 2px solid white;
     border-radius: 10px 0 10px 0;
-        text-align: center;
+    text-align: center;
 }
+
 h3 {
     font-size: .7rem;
 }
-article, .price{
+
+article, .price {
     background-color: #dcdcdc;
     margin: 0 auto;
 }
+
 .price {
-     -ms-border-radius: 20px;
+    -ms-border-radius: 20px;
     border-radius: 20px;
-    width: 60%; 
+    width: 60%;
     text-align: center;
 }
 

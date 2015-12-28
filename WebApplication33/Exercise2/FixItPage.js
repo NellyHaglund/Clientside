@@ -92,43 +92,46 @@ var array = makeMeAnArray_paragraph.split(" ");
 */
 addDiv("Click me to see some result, depending on what index word has something will happen (switch/case)", playWithStringMethodsAndProperties);
 var stringToAlert;
+
 function playWithStringMethodsAndProperties() {
     for (var i = 0; i < array.length; i++) {
         switch (true) {
-            case i % 2 === 0:
-                stringToAlert += array[i].toUpperCase() + " ";
-                break;
-            case i % 8 === 0:
-                stringToAlert += array[i].toLowerCase() + " ";
-                break;
-            case i % 2 === 3:
-                stringToAlert += array.charAt(i) + " ";
-                break;
-            case i % 10 === 0:
-                stringToAlert += array.indexOf(i) + " ";
-                break;
-            case array[i] === "fleck":
-                stringToAlert += "fleck: " + array.lastIndexOf("fleck") + " ";
-                break;
-            case array[i] === "greplin":
-                stringToAlert += array[i].replace("JAG HAR BLIVIT ERSATT") + " ";
-                break;
-            case array[i].length > 7:
-                stringToAlert += "Jag var längre än 7 tecken: " + array[i].substring(2, 5) + " ";
-                break;
-            default:
-                stringToAlert += array[i] + " ";
-                break;
+        case i % 2 === 0:
+            stringToAlert += array[i].toUpperCase() + " ";
+            break;
+        case i % 8 === 0:
+            stringToAlert += array[i].toLowerCase() + " ";
+            break;
+        case i % 2 === 3:
+            stringToAlert += array.charAt(i) + " ";
+            break;
+        case i % 10 === 0:
+            stringToAlert += array.indexOf(i) + " ";
+            break;
+        case array[i] === "fleck":
+            stringToAlert += "fleck: " + array.lastIndexOf("fleck") + " ";
+            break;
+        case array[i] === "greplin":
+            stringToAlert += array[i].replace("JAG HAR BLIVIT ERSATT") + " ";
+            break;
+        case array[i].length > 7:
+            stringToAlert += "Jag var längre än 7 tecken: " + array[i].substring(2, 5) + " ";
+            break;
+        default:
+            stringToAlert += array[i] + " ";
+            break;
         }
     }
     alert(stringToAlert);
 }
+
 /*
 
 ### String objects page 132: ###
 9. check if the 4th element in the array is a number
 */
 addDiv("Check if 4th element in array is a number", checkIsNumber);
+
 function checkIsNumber() {
     if (isNaN(array[4])) {
         alert(array[4] + "Inget nummer");
@@ -136,19 +139,23 @@ function checkIsNumber() {
         alert(Number(array[4]) + " Jag är ett nummer");
     };
 }
+
 /*
 
 ### Math page 134: ###
 10. Round one of the numbers in the paragraph up/down
 */
 addDiv("Round number in paragraph", roundNumber);
+
 function roundNumber() {
     alert(array[4] + "--> " + Math.round(array[4]));
 }
+
 /*
 11. replace the 3rd word with PI then roud it to the nearest integer
 */
 addDiv("Replace 3rd word with PI and round it to integer", replace3rd);
+
 function replace3rd() {
     alert(array[2] + "--> " + Math.PI + "-->" + Math.round(Math.PI));
 }
@@ -159,8 +166,9 @@ function replace3rd() {
 12. Calculate how many days it's until your birthday and present it.
 */
 addDiv("Days until my birthday", daysUntilBirthday);
+
 function daysUntilBirthday() {
-    
+
     var birthday = document.getElementById("birthdayPresentation");
     var oneDay = 24 * 60 * 60 * 1000;
     var today = new Date();
@@ -172,10 +180,12 @@ function daysUntilBirthday() {
     var untilMyBirthday = Math.round(Math.abs((today.getTime() - date.getTime()) / (oneDay)));
     birthday.innerHTML = "Days until my birthday: " + untilMyBirthday;
 }
+
 /*
 13. Calculate how many minutes old you are and present it.
 */
 addDiv("How many minutes old?", minutesOld);
+
 function minutesOld() {
     var ageInMinutes = document.getElementById("birthdayPresentation");
     var minutesPerYear = (24 * 60) * 365;

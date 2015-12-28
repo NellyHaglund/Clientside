@@ -12,6 +12,7 @@
 */
 //DRINKS
 //Subs
+
 handleHamburgerRequest();
 handleSubRequest();
 handlePizzaRequest();
@@ -30,7 +31,7 @@ function handleHamburgerRequest() {
     }
     request.open("GET", "JsonFiles/hamburger.json");
 
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             var jsonHamburgers = JSON.parse(request.responseText);
             addProductFromJson(jsonHamburgers.hamburgers);
@@ -50,7 +51,7 @@ function handleSubRequest() {
     }
     request.open("GET", "JsonFiles/subs.json");
 
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             var jsonSubs = JSON.parse(request.responseText);
             addProductFromJson(jsonSubs.subs);
@@ -69,7 +70,7 @@ function handlePizzaRequest() {
     }
     request.open("GET", "JsonFiles/pizza.json");
 
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             var jsonPizza = JSON.parse(request.responseText);
             addProductFromJson(jsonPizza.pizza);
@@ -89,7 +90,7 @@ function handleDrinkRequest() {
     }
     request.open("GET", "JsonFiles/drinks.json");
 
-    request.onreadystatechange = function() {
+    request.onreadystatechange = function () {
         if (request.readyState === 4 && request.status === 200) {
             var jsonDrinks = JSON.parse(request.responseText);
             addProductFromJson(jsonDrinks.drinks);
