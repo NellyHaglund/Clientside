@@ -4,11 +4,11 @@ var prices = document.getElementsByClassName("price");
 var date = new Date().getHours();
 
 function happyHourPrice() {
-    if (date >= 17 && date <= 19) {
+    if (date >= 08 && date <= 19) {
         for (var i = 0; i < prices.length; i++) {
             var price = Number(prices[i].innerHTML);
-            var newPrice = adjustPrice(price * 0.7);
-            prices[i].innerHTML = newPrice;
+            var newPrice = price * 0.7;
+            prices[i].innerHTML = adjustPrice(newPrice);
         }
     }
 }
@@ -25,15 +25,14 @@ function adjustPrice(price) {
     return price.toFixed(2);
 }
 
-
 /*Add pictures function to span:*/
 
 function addBurgerImages() {
-    var spanElements = document.getElementsByTagName('span');
+    var spanElements = document.getElementsByTagName("span");
     console.log(spanElements);
     for (var i = 0; i < spanElements.length; i++) {
-        var element = document.createElement('img');
-        element.setAttribute('src', 'Images/Hamburger.png');
+        var element = document.createElement("img");
+        element.setAttribute("src", "Images/Hamburger.png");
         spanElements[i].innerHTML = "";
         spanElements[i].appendChild(element);
     }
@@ -59,14 +58,13 @@ function todaysOffer() {
     for (var i = 0; i < daysOfTheWeek.length; i++) {
         if (i === currentDay) {
             var element = document.getElementById(daysOfTheWeek[i]);
-            element.setAttribute('class', 'todaysOfferPrice');
+            element.style.backgroundColor = "red";
             var price = element.innerHTML;
             var newPrice = price * 0.80;
-            element.innerHTML = newPrice;
+            element.innerHTML = adjustPrice(newPrice);
         }
     }
 }
-
 
 /*Stretch exercises: (increasing tuffness for each number!)
 
