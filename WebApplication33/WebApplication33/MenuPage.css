@@ -5,7 +5,7 @@
 fieldset, article {
     width: 12%;
     height: 20%;
-    display: inline;
+    float: left;
 
 }
 
@@ -36,15 +36,6 @@ h3 {
     border-radius: 20px;
     width: 60%; 
     text-align: center;
-}
-
-.todaysOfferPrice {
-        margin: 0 auto;
-         -ms-border-radius: 20px;
-    border-radius: 20px;
-    width: 60%; 
-    text-align: center;
-    background-color: red;
 }
 
 fieldset {
