@@ -1,54 +1,61 @@
 ﻿{
-    "heading": "Delicious Burgers",
-    "hamburgers": [
-        {
-            "dayOfTheWeek": "1",
-            "name": "Pepper Burger",
-            "price": "19.90",
-            "size": "150 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "2",
-            "name": "Cinnamon Burger",
-            "price": "19.90",
-            "size": "100 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "3",
-            "name": "salty Burger",
-            "price": "19.90",
-            "size": "150 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "4",
-            "name": "sallad Burger",
-            "price": "19.90",
-            "size": "50 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "5",
-            "name": "simple Burger",
-            "price": "19.90",
-            "size": "90 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "6",
-            "name": "maximum Burger",
-            "price": "19.90",
-            "size": "150 g",
-            "img": "Images/Hamburger.png"
-        },
-        {
-            "dayOfTheWeek": "0",
-            "name": "onion Burger",
-            "price": "19.90",
-            "size": "90 g",
-            "img": "Images/Hamburger.png"
-        }
-    ]
+  "heading": "Delicious Burgers",
+  "hamburgers": [
+    {
+      "dayOfTheWeek": "1",
+      "name": "Pepper Burger",
+      "price": "19.90",
+      "size": "150 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger tastes like pepper, it is disguisting. Most people spit it our, but that doesn't stop us"
+    },
+    {
+      "dayOfTheWeek": "2",
+      "name": "Cinnamon Burger",
+      "price": "19.90",
+      "size": "100 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger tastes like Cinnamon, it is disguisting. I wouldn't eat it, but that doesn't stop me"
+    },
+    {
+      "dayOfTheWeek": "3",
+      "name": "salty Burger",
+      "price": "19.90",
+      "size": "150 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger tastes like salt, it is disguisting. Most people spit it our, but that doesn't stop us"
+    },
+    {
+      "dayOfTheWeek": "4",
+      "name": "sallad Burger",
+      "price": "19.90",
+      "size": "50 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger tastes like sallad, it is good and healthy. It was first created in South America"
+    },
+    {
+      "dayOfTheWeek": "5",
+      "name": "simple Burger",
+      "price": "19.90",
+      "size": "90 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger is simple, only bread and sallad"
+    },
+    {
+      "dayOfTheWeek": "6",
+      "name": "maximum Burger",
+      "price": "19.90",
+      "size": "150 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger is big as hell, it is great. Carl von Linne invented this one"
+    },
+    {
+      "dayOfTheWeek": "0",
+      "name": "onion Burger",
+      "price": "19.90",
+      "size": "90 g",
+      "img": "Images/Hamburger.png",
+      "description": "This burger tastes like onion, it is disguisting. Most people spit it our, but that doesn't stop us"
+    }
+  ]
 }
