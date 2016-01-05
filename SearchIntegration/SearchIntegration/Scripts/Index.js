@@ -2,7 +2,7 @@
     $("#search_input").keyup(function () {
         var searchInput = $(this).val();
         console.log($(this).val());
-        var output = "<ul>";
+        var output = "<ul class='resultList'";
         var regex = new RegExp(searchInput, "i");
         $.getJSON("Json/products.json", function (data) {
             $.each(data, function (key, value) {
