@@ -1,0 +1,254 @@
+﻿[
+  {
+    "dayOfTheWeek": "1",
+    "name": "Pepper drink",
+    "price": "19.90",
+    "size": "4 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink tastes like pepper, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "2",
+    "name": "Daquiri drink",
+    "price": "19.90",
+    "size": "2 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink tastes like Strawberry, it is lovely. This is our most famous drink",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "3",
+    "name": "Salty drink",
+    "price": "19.90",
+    "size": "6 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink tastes like salt, it is disguisting and awful. Most people spit it our, but what do we care",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "4",
+    "name": "wine drink",
+    "price": "19.90",
+    "size": "3 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink isn't a drink, it's wine, regular wine from Spain",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "5",
+    "name": "some drink",
+    "price": "19.90",
+    "size": "10 cl",
+    "img": "Images/Drink.png",
+    "description": "This is a drink, it is disguisting or maybe good? Most people don't know what it is, it'll always be a secret",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "6",
+    "name": "Sweet'n'sour drink",
+    "price": "19.90",
+    "size": "4 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink tastes like sweet and sour, it is disguisting. Most people spit it out on the floor, but that doesn't stop us",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "0",
+    "name": "Lemon drink",
+    "price": "19.90",
+    "size": "4 cl",
+    "img": "Images/Drink.png",
+    "description": "This drink tastes like lemon, it is wonderfull. Most people don't spit it our, that is what keep us going",
+    "category": "drinks"
+  },
+  {
+    "dayOfTheWeek": "1",
+    "name": "Pepper Burger",
+    "price": "19.90",
+    "size": "150 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger tastes like pepper, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "2",
+    "name": "Cinnamon Burger",
+    "price": "19.90",
+    "size": "100 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger tastes like Cinnamon, it is disguisting. I wouldn't eat it, but that doesn't stop me",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "3",
+    "name": "salty Burger",
+    "price": "19.90",
+    "size": "150 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger tastes like salt, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "4",
+    "name": "sallad Burger",
+    "price": "19.90",
+    "size": "50 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger tastes like sallad, it is good and healthy. It was first created in South America",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "5",
+    "name": "simple Burger",
+    "price": "19.90",
+    "size": "90 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger is simple, only bread and sallad",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "6",
+    "name": "maximum Burger",
+    "price": "19.90",
+    "size": "150 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger is big as hell, it is great. Carl von Linne invented this one",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "0",
+    "name": "onion Burger",
+    "price": "19.90",
+    "size": "90 g",
+    "img": "Images/Hamburger.png",
+    "description": "This burger tastes like onion, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "hamburgers"
+  },
+  {
+    "dayOfTheWeek": "1",
+    "name": "Pepper Pizza",
+    "price": "19.90",
+    "size": "35 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza tastes like pepper, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "2",
+    "name": "Onion Pizza",
+    "price": "19.90",
+    "size": "100 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza tastes like onion, it is great. Most people eat this one",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "3",
+    "name": "Vegetable Pizza",
+    "price": "19.90",
+    "size": "30 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza only contains vegetables, no meat and that is good",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "4",
+    "name": "Sushi Pizza",
+    "price": "19.90",
+    "size": "35 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza tastes like sushi, it is disguisting. Most people hate it",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "5",
+    "name": "Popcorn Pizza",
+    "price": "19.90",
+    "size": "35 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza is shaped lika a popcorn, comes from ITalaia",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "6",
+    "name": "Extra-everything Pizza",
+    "price": "19.90",
+    "size": "100 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza have everything, you say it and it will be there",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "0",
+    "name": "Cheese Pizza",
+    "price": "19.90",
+    "size": "35 cm",
+    "img": "Images/Pizza.png",
+    "description": "This pizza tastes like cheese, it is disguisting. Most people spit it out.",
+    "category": "pizza"
+  },
+  {
+    "dayOfTheWeek": "1",
+    "name": "Pepper sub",
+    "price": "19.90",
+    "size": "15 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub tastes like pepper, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "2",
+    "name": "Vegetale sub",
+    "price": "19.90",
+    "size": "15 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub - all vegetables, it is Nellys favourite!",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "3",
+    "name": "Big sub",
+    "price": "19.90",
+    "size": "30 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub is big, it is big. Most people think it is big, but that doesn't stop us",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "4",
+    "name": "Small sub",
+    "price": "19.90",
+    "size": "12 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub is small, it is small. Most people spit it our, but that doesn't stop us",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "5",
+    "name": "Onion sub",
+    "price": "19.90",
+    "size": "15 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub tastes like onion, it is disguisting. Most people spit it our, but that doesn't stop us",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "6",
+    "name": "Qourn sub",
+    "price": "19.90",
+    "size": "15 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub tastes like qourn, it is lovely",
+    "category": "subs"
+  },
+  {
+    "dayOfTheWeek": "0",
+    "name": "Tomato sub",
+    "price": "19.90",
+    "size": "15 cm",
+    "img": "Images/Subs.png",
+    "description": "This sub tastes like tomato, it is disguisting. From Denmark",
+    "category": "subs"
+  }
+]
