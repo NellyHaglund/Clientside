@@ -1,12 +1,11 @@
 ﻿html {
     height: 100%;
 }
+
 body {
     background-image: -moz-linear-gradient( left top, right bottom, from(red), color-stop(16%, orange), color-stop(32%, yellow), color-stop(48%, green), color-stop(60%, blue), color-stop(76%, indigo), to(violet));
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, red), color-stop(16%, orange), color-stop(32%, yellow), color-stop(48%, green), color-stop(60%, blue), color-stop(76%, indigo), color-stop(1.00, violet));
-
 }
-
 
 #liveSearch {
     margin: 0 auto;
@@ -51,8 +50,7 @@ body {
         letter-spacing: 1px;
         margin-bottom: 10px;
         background-image: -moz-linear-gradient( left top, right bottom, from(lightcoral), color-stop(16%, orange), color-stop(32%, lightyellow), color-stop(48%, lightgreen), color-stop(60%, lightblue), color-stop(76%, indigo), to(violet));
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, lightcoral), color-stop(16%, orange), color-stop(32%, lightyellow), color-stop(48%, lightgreen), color-stop(60%, lightblue), color-stop(76%, indigo), color-stop(1.00, violet));
-
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, lightcoral), color-stop(16%, orange), color-stop(32%, lightyellow), color-stop(48%, lightgreen), color-stop(60%, lightblue), color-stop(76%, indigo), color-stop(1.00, violet));
         padding-bottom: 10px;
         height: 100px;
         overflow: hidden;
@@ -63,18 +61,20 @@ body {
         animation: smoothTransition 1s;
     }
 
-   h2 {
-       margin-top: 10px;
-   }
+h2 {
+    margin-top: 10px;
+}
+
 #searchResults li:hover {
     height: 250px;
     min-height: 100px;
     overflow: visible;
 }
-#searchResults li:hover img {
-    height: 200px;
-    width: 150px;
-}
+
+    #searchResults li:hover img {
+        height: 200px;
+        width: 150px;
+    }
 
 #searchResults img {
     float: left;
@@ -82,12 +82,12 @@ body {
     margin-left: 10px;
     -ms-border-radius: 10px;
     border-radius: 10px;
-  
 }
 
 #checkbox_area {
     text-transform: uppercase;
 }
+
 @-moz-keyframes smoothTransition {
     0% {
         opacity: 0.2;

@@ -4,7 +4,6 @@
     $(".checkboxes").change(function () { loadJson(); });
 });
 
-
 function loadJson() {
     var output = "<ul class='resultList'>";
     var searchInput = $("#search_input").val();
