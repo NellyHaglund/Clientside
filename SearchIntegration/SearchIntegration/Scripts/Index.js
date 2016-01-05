@@ -1,6 +1,6 @@
 ﻿$(function () {
 
-    $(".checkboxes").change(function() {
+    $(".checkboxes").change(function () {
         var output = "<ul class='resultList'>";
         $.getJSON("Json/products.json", function (data) {
             $.each(data, function (key, value) {
