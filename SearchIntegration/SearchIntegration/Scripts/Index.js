@@ -17,6 +17,9 @@ function loadJson() {
                     output += "<img src='" + value.img + "' alt='" + value.name + "'/>";
                     output += "<h2>" + value.name + "</h2>" + "</br>";
                     output += value.description;
+                    output += "<br/><br/>";
+                    output += "Price: " + value.price;
+                    output += "<br/> Size: " + value.size;
                     output += "</li>";
                 }
             }
