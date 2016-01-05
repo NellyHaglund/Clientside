@@ -72,10 +72,7 @@
     <Content Include="Images\Subs.PNG" />
     <Content Include="Index.html" />
     <Content Include="packages.config" />
-    <Content Include="Json\drinks.json" />
-    <Content Include="Json\hamburger.json" />
-    <Content Include="Json\pizza.json" />
-    <Content Include="Json\subs.json" />
+    <Content Include="Json\products.json" />
     <None Include="Scripts\jquery-2.1.0.intellisense.js" />
     <None Include="Scripts\jquery-2.1.0-vsdoc.js" />
     <Content Include="Scripts\Index.js" />
