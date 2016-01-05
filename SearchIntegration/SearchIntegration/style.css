@@ -4,7 +4,9 @@
 body {
     background-image: -moz-linear-gradient( left top, right bottom, from(red), color-stop(16%, orange), color-stop(32%, yellow), color-stop(48%, green), color-stop(60%, blue), color-stop(76%, indigo), to(violet));
     background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.00, red), color-stop(16%, orange), color-stop(32%, yellow), color-stop(48%, green), color-stop(60%, blue), color-stop(76%, indigo), color-stop(1.00, violet));
+
 }
+
 
 #liveSearch {
     margin: 0 auto;
