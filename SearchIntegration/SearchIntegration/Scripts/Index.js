@@ -8,8 +8,8 @@ function loadJson() {
     var output = "<ul class='resultList'>";
     var searchInput = $("#search_input").val();
     var regex = new RegExp(searchInput, "i");
-    $.getJSON("Json/products.json", function (data) {
-        $.each(data, function (key, value) {
+    $.getJSON("Json/products.json", function(data) {
+        $.each(data, function(key, value) {
             if ((value.name.search(regex) !== -1) || (value.description.search(regex) !== -1)) {
                 if ($("#" + value.category).is(":checked")) {
                     output += "<li>";
@@ -25,5 +25,10 @@ function loadJson() {
         });
         output += "</ul>";
         $("#searchResults").html(output);
+        $("li").on("swipe", function() {
+            $(this).hide();
+        });
+
     });
 }
+

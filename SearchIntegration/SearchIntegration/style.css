@@ -86,6 +86,11 @@ h2 {
 
 #checkbox_area {
     text-transform: uppercase;
+    height: 100px;
+}
+
+.liSwipe {
+    animation: movement 3s;
 }
 
 @-moz-keyframes smoothTransition {
@@ -116,4 +121,18 @@ h2 {
     100% {
         opacity: 0.8;
     }
+}
+
+@keyframes movement {
+    0% {
+        margin-left: 0;
+    }
+50% {
+    margin-left: 50px;
+    opacity: 0.5;
+}
+100% {
+    margin-left: 100px;
+    opacity: 0;
+}
 }
